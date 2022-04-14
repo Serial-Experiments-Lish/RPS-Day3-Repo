@@ -1,3 +1,4 @@
+
 const hands = ['rock', 'paper', 'scissors'];
 
 function getHands() {
@@ -57,5 +58,14 @@ let playGame = (playerUno, playerDos, playUntil) => {
 
 console.log(playGame(playerOne, playerTwo, 5));
 
+function getHand (callback, hand) {
+    if (hand !== "scissors") {
+        callback(hand);
+    }
+}
+
+module.exports = {playerOne, playerTwo, hands, getHand};
+
 //I primarily received help from Hector's demo.  This was an assignment that I for sure struggled with.  I need to take more time grasping these concepts, but I would like to believe I'm inching my way there, slowly.
-//I'm not giving up, just letting whoever is reviewing this code that I will continue trying until I get it... however long that may take.
+//I'm not giving up, just letting whoever is reviewing this code know that I will continue trying until I get it... however long that may take.
+
